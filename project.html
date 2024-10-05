@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Creative Corner - Inspire and Be Inspired</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<style>
+    /* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.creative-header {
+    background-image: url("https://www.nasa.gov/wp-content/uploads/2023/06/jwst-flickr-52259221868-30e1c78f0c-4k.jpg?w=2048"); /* Added background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color for contrast */
+    text-align: center;
+    padding: 40px 0; 
+    position: relative;
+}
+
+.creative-header h1 {
+    font-size: 3em; 
+    margin-bottom: 0.2em; 
+}
+
+/* Student Projects Styles */
+.student-projects {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.submission-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Contests Styles */
+.contests {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 15px; /* Add some space above the button */
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40; 
+    color: white;
+}
+</style>
+<body>
+
+    <header class="creative-header">
+        <div class="container">
+            <h1>PACE Creative Corner</h1>
+            <p>Unleash your creativity and explore the wonders of Earth's oceans and atmosphere through art, writing, and multimedia projects.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="student-projects">
+            <h2>Student Projects</h2>
+            <p>Be inspired by these amazing projects created by students like you!</p>
+
+            <div class="project-grid">
+                <div class="project">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-OCI-global-biosphere-720.jpg" alt="Student Project 1">
+                    <h3>The Ocean's Symphony</h3>
+                    <p>A multimedia presentation combining music, poetry, and PACE data visualizations to explore the interconnectedness of the ocean and its inhabitants.</p>
+                    <a href="#" class="learn-more-btn">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-HARP2-cloud-bow-tie-720.jpg" alt="Student Project 2">
+                    <h3>The Dance of Aerosols and Clouds</h3>
+                    <p>An interactive animation that visualizes the movement of aerosols and clouds using PACE data, demonstrating their impact on climate and weather patterns.</p>
+                    <a href="#" class="learn-more-btn">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-SpexOne-polarimeter-720.png" alt="Student Project 3">
+                    <h3>Hidden Colors of the Ocean</h3>
+                    <p>A series of paintings inspired by the diverse colors of the ocean revealed by PACE data, highlighting the beauty and complexity of marine ecosystems.</p>
+                    <a href="#" class="learn-more-btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="submission-cta">
+                <p>Have a project you'd like to share? Submit it here!</p>
+                <a href="#" class="learn-more-btn">Submit Your Project</a>
+            </div>
+        </section>
+
+        <section class="contests">
+            <h2>Contests and Challenges</h2>
+            <p>Put your creativity to the test and participate in these exciting challenges:</p>
+
+            <div class="contest-grid">
+                <div class="contest">
+                    <h3>PACE Art Challenge</h3>
+                    <p>Create a piece of art inspired by PACE data and its mission to explore Earth's oceans and atmosphere. Use any medium you like – painting, drawing, sculpture, digital art, etc.</p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+                <div class="contest">
+                    <h3>PACE Storytelling Challenge</h3>
+                    <p>Write a story, poem, or song that explores the wonders of the ocean and the importance of scientific discovery, drawing inspiration from PACE data and its applications.</p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PACE Education Project</p>
+    </footer>
+
+</body>
+</html>

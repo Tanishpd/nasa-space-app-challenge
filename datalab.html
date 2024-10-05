@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Data Lab - Dive into Ocean Discovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Data Lab Specific Styles */
+        .data-lab-intro {
+            text-align: center;
+            padding: 50px 0;
+            background-image: url("https://mynasadata.larc.nasa.gov/sites/default/files/2020-03/binary-one-null-space.jpg"); /* Added background image */
+            background-size: cover;
+            background-position: center;
+            color: white; /* White text color for contrast */
+            position: relative; /* For positioning the overlay */
+        }
+
+        .data-lab-intro h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .data-lab-intro p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Overlay for better text readability */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+        }
+
+        .visualization-section {
+            margin-top: 40px;
+        }
+
+        .visualization-container {
+            display: grid; /* Using grid for better layout control */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+            gap: 20px;
+        }
+
+        .visualization {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content within each visualization */
+            transition: transform 0.2s ease;
+        }
+
+        .visualization:hover {
+            transform: translateY(-5px);
+        }
+
+        .visualization img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .visualization h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        /* Activity Section */
+        .activity-section {
+            margin-top: 40px;
+        }
+
+        .activity {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        /* Grade Level Differentiation */
+        .grade-level {
+            margin-top: 40px;
+        }
+
+        .grade-level-options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .grade-level-option {
+            width: 200px; /* Adjusted width */
+            margin-bottom: 20px;
+            padding: 20px;
+            border: none; /* Removed border */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .grade-level-option:hover {
+            transform: translateY(-5px);
+        }
+
+        .grade-level-option h4 {
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="data-lab-intro">
+        <div class="overlay"></div> 
+        <h2>PACE Data Lab</h2>
+        <p>Dive into Ocean Discovery</p>
+    </div>
+
+    <div class="container">
+
+        <section class="visualization-section">
+            <h2>Interactive Data Visualizations</h2>
+            <p>Explore these interactive visualizations to uncover the secrets hidden within PACE data:</p>
+
+            <div class="visualization-container">
+                <div class="visualization">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-OCI-global-biosphere-720.jpg" alt="Global Phytoplankton Distribution">
+                    <h3>Global Phytoplankton Distribution</h3>
+                    <p>Explore a dynamic map revealing the concentration of phytoplankton in different ocean regions. Discover how these microscopic plants influence the marine food web and global climate.</p>
+                    <a href="#" class="learn-more-btn">Explore Map</a>
+                </div>
+
+                <div class="visualization">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-HARP2-cloud-bow-tie-720.jpg" alt="Aerosol Optical Depth">
+                    <h3>Aerosol Optical Depth</h3>
+                    <p>Visualize the distribution of aerosols in the atmosphere and understand their impact on air quality, climate, and ocean ecosystems.</p>
+                    <a href="#" class="learn-more-btn">Explore Visualization</a>
+                </div>
+
+                <div class="visualization">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-SpexOne-polarimeter-720.png" alt="Ocean Color and Water Quality">
+                    <h3>Ocean Color and Water Quality</h3>
+                    <p>Dive into the fascinating relationship between ocean color and water quality. Learn how PACE data helps monitor pollution, sediment flow, and other factors affecting marine health.</p>
+                    <a href="#" class="learn-more-btn">Explore Data</a>
+                </div>
+
+                <div class="visualization">
+                    <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-OCI-chlorophyll-720.jpg" alt="Chlorophyll Concentration">
+                    <h3>Chlorophyll Concentration</h3>
+                    <p>Investigate the patterns of chlorophyll concentration in the ocean, a key indicator of phytoplankton abundance and primary productivity.</p>
+                    <a href="#" class="learn-more-btn">Explore Visualization</a>
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+    <footer>
+        <p>&copy; 2024 PACE Education Project</p>
+    </footer>
+
+</body>
+</html>

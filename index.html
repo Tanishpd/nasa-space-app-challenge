@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlocking the Secrets of the Ocean: Explore the PACE Mission</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+            font-family: 'Roboto', sans-serif; /* Elegant font */
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: 400; /* Slightly lighter headings */
+        }
+
+        /* Hero Section */
+        header {
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80"); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0; /* Increased padding */
+            position: relative;
+            overflow: hidden; /* Hide overflowing elements for the wave effect */
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 0.3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.3em;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .learn-more-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Wave Effect in Hero Section */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg")   
+ repeat-x; 
+            background-size: 1000px 100px;
+            animation:   
+ wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        }
+
+        .wave:nth-child(2) {
+            animation-delay: -15s;
+        }
+
+        @keyframes wave {
+            0% {
+                margin-left: 0;
+            }
+            100% {
+                margin-left: -1000px;
+            }
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #343a40;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for navigation */
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px; /* Increased padding */
+            font-size: 1.1em; /* Slightly larger font size */
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1100px; /* Wider container */
+            margin: 30px auto; /* Increased margin */
+            padding: 0 20px;
+        }
+
+        /* Featured Content */
+        .featured-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px; /* Increased margin */
+        }
+
+        .card {
+            width: 350px; /* Slightly wider cards */
+            margin-bottom: 30px; /* Increased margin */
+            border: none; /* Removed border */
+            padding: 30px; /* Increased padding */
+            border-radius: 8px; /* More rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.2s ease; /* Add hover transition */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px; /* Increased image height */
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 5px; /* Rounded image corners */
+        }
+
+        .card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color   
+ 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            text-align: center;
+            margin-top: 50px; /* Increased margin */
+        }
+
+        .benefits ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .benefits li {
+            margin: 30px; /* Increased margin */
+            text-align: center;
+            width: 200px; /* Adjusted width for better layout */
+        }
+
+        .benefits img {
+            width: 60px; /* Larger icon size */
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f8f9fa; /* Light background for testimonials */
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .testimonials .quote {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #6c757d; /* Slightly lighter text color */
+        }
+
+        .testimonials .author {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Call to Action Section */
+        .call-to-action {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .call-to-action button {
+            margin: 15px; /* Increased margin */
+            padding: 14px 25px;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Unlocking the Secrets of the Ocean</h1>
+        <p>Explore the PACE Mission</p> 
+        <a href="#" class="learn-more-btn">Learn More</a> 
+        <div class="wave"></div>
+        <div class="wave wave-2"></div> </header>
+
+    <nav>
+        <ul>
+            <li><a href="mission-control.html">Mission Control</a></li>
+            <li><a href="datalab.html">Data Lab</a></li>
+            <li><a href="project.html">Creative Corner</a></li>
+            <li><a href="resource.html">Teacher Resources</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section class="featured-content">
+            <div class="card">
+                <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-OCI-global-biosphere-720.jpg" alt="Phytoplankton Bloom"> 
+                <h3>Tracking Phytoplankton Blooms from Space</h3>
+                <p>PACE's Ocean Color Instrument (OCI) allows scientists to monitor phytoplankton populations from orbit, providing crucial insights into ocean health and the marine food web. Learn how these microscopic plants play a vital role in the Earth's climate and ecosystem.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-HARP2-cloud-bow-tie-720.jpg" alt="Aerosols and Clouds"> 
+                <h3>Unraveling the Mysteries of Aerosols and Clouds</h3>
+                <p>PACE's polarimeters, SPEXone and HARP2, study how aerosols and clouds interact with sunlight. This data helps us understand how these atmospheric components influence the climate, ocean ecosystems, and air quality.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-SpexOne-polarimeter-720.png" alt="Ocean Color Science"> 
+                <h3>Dive Deep into Ocean Color Science</h3>
+                <p>Explore the science behind ocean color and discover how PACE data is used to study the physical, chemical, and biological processes that affect the ocean's color. Learn how this information helps us understand the ocean's role in the global carbon cycle and climate change.</p>
+                <a href="#">Read More</a>
+            </div>
+        </section>
+
+        <section class="benefits" id="mission"> 
+            <h2>Benefits of PACE Data</h2>
+            <p>Discover how PACE data is being used to address critical challenges:</p>
+            <ul>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2901/2901390.png" alt="Phytoplankton Icon"> 
+                    <p>**Assessing Ocean Health:** Monitor phytoplankton health, diversity, and productivity to understand the overall state of the marine ecosystem.</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4060/4060179.png" alt="Algal Bloom Icon"> 
+                    <p>**Protecting Coastal Communities:** Track and predict harmful algal blooms that can impact human health, fisheries, and tourism.</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3074/3074593.png" alt="Climate Change Icon"> 
+                    <p>**Mitigating Climate Change:** Understand the ocean's role in the carbon cycle and how climate change is affecting marine ecosystems.</p>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2397/2397261.png" alt="Marine Ecosystems Icon"> 
+                    <p>**Managing Marine Resources:** Provide data for sustainable fisheries management and marine conservation efforts.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <p class="quote">"PACE data has revolutionized our ability to study ocean ecosystems and their response to climate change, providing critical information for policymakers and resource managers."</p>
+            <p class="author">- Dr. Jeremy Werdell, PACE Project Scientist</p>
+
+            <p class="quote">"The PACE website is an invaluable resource for my students, bringing the excitement of real-world science into the classroom and inspiring them to become the next generation of ocean stewards."</p>
+            <p class="author">- Ms. Sarah Jones, Science Teacher</p>
+        </section>
+
+        <section class="call-to-action" id="data"> 
+            <h2>Get Involved</h2>
+            <p>Join the PACE community and contribute to our understanding of the ocean.</p>
+            <button>Sign up for our newsletter</button>
+            <button>Follow us on social media</button>
+            <button>Donate to support our work</button>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PACE Education Project</p>
+    </footer>
+
+</body>
+</html>

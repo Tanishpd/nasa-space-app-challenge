@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Mission Control - Journey into Earth's Atmosphere and Ocean</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Mission Control Specific Styles */
+.mission-control-intro {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/ISS_Flight_Control_Room_2006.jpg/2560px-ISS_Flight_Control_Room_2006.jpg"); /* Added background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color for contrast */
+    text-align: center;
+    padding: 40px 0; 
+    position: relative;
+}
+
+.mission-control-intro h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mission-control-intro p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.innovationnewsnetwork.com/nasa-pace-mission-successfully-launches/43300/");
+}
+
+.mission-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.instrument-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.instrument-card:hover {
+    transform: translateY(-5px);
+}
+
+.instrument-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.scientist-profile {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scientist-profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5;}
+        .discovery-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .scientist-info {
+            margin-left: 20px; /* Add space between image and info */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mission-control-intro">
+        <div class="overlay"></div>
+        <h2>PACE Mission Control</h2>
+        <p>Journey into Earth's Atmosphere and Ocean</p>
+    </div>
+
+    <div class="container">
+
+        <section class="mission-section">
+            <h2>About the PACE Mission</h2>
+            <p>The Plankton, Aerosol, Cloud, ocean Ecosystem (PACE) mission is a NASA Earth-observing satellite mission designed to revolutionize our understanding of the complex interactions between the ocean, atmosphere, and climate. Launched in 2024, PACE provides unprecedented data on ocean color, aerosols, and clouds, helping scientists address critical challenges such as climate change, ocean health, and air quality.</p>
+
+            <h3>Key Objectives:</h3>
+            <ul>
+                <li>Study the impact of climate change on ocean ecosystems and marine life.</li>
+                <li>Monitor phytoplankton populations and their role in the global carbon cycle.</li>
+                <li>Track and predict harmful algal blooms that can affect human health and coastal economies.</li>
+                <li>Improve air quality forecasting by understanding the distribution and properties of aerosols.</li>
+                <li>Enhance our understanding of cloud formation and their role in the climate system.</li>
+            </ul>
+        </section>
+
+        <section class="mission-section">
+            <h2>Instruments on Board</h2>
+            <div class="instrument-card">
+                <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-OCI-global-biosphere-720.jpg" alt="Ocean Color Instrument (OCI)">
+                <h3>Ocean Color Instrument (OCI)</h3>
+                <p>OCI is a hyperspectral sensor that measures the color of the ocean with unprecedented detail. This data helps identify different types of phytoplankton, assess ocean health, and track water quality.</p>
+            </div>
+            <div class="instrument-card">
+                <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-SpexOne-polarimeter-720.png" alt="SPEXone Polarimeter">
+                <h3>SPEXone Polarimeter</h3>
+                <p>SPEXone is a polarimeter that measures the properties of aerosols in the atmosphere. This data helps understand how aerosols affect climate, air quality, and ocean ecosystems.</p>
+            </div>
+            <div class="instrument-card">
+                <img src="https://pace.oceansciences.nasa.gov/images/gallery/PACE-HARP2-cloud-bow-tie-720.jpg" alt="HARP2 Polarimeter">
+                <h3>HARP2 Polarimeter</h3>
+                <p>HARP2 is another polarimeter that focuses on measuring the properties of clouds. This data helps understand cloud formation, their impact on climate, and their interaction with aerosols.</p>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <h2>Meet the Scientists</h2>
+            <div class="scientist-profile">
+                <img src="https://pace.oceansciences.nasa.gov/images/people/JeremyWerdell.jpg" alt="Dr. Jeremy Werdell">
+                <div class="scientist-info">
+                    <h3>Dr. Jeremy Werdell</h3>
+                    <p>PACE Project Scientist</p>
+                    <p>Dr. Werdell leads the PACE science team and is responsible for ensuring the mission achieves its scientific objectives. He is an expert in ocean color remote sensing and has dedicated his career to studying the ocean's role in the Earth system.</p>
+                </div>
+            </div>
+            </section>
+
+        <section class="mission-section">
+            <h2>Latest Discoveries</h2>
+            <div class="discovery-item">
+                <h3>PACE Reveals New Insights into Phytoplankton Dynamics</h3>
+                <p>Recent PACE observations have provided valuable data on how phytoplankton communities respond to changes in ocean currents and nutrient availability. This information is crucial for understanding the marine food web and predicting the impacts of climate change on ocean ecosystems.</p>
+            </div>
+            <div class="discovery-item">
+                <h3>Aerosol Impacts on Cloud Formation</h3>
+                <p>PACE data is helping scientists unravel the complex relationship between aerosols and cloud formation. By studying how different types of aerosols influence cloud properties, researchers can improve climate models and better predict future climate scenarios.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PACE Education Project</p>
+    </footer>
+
+</body>
+</html>
